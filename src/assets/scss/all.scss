@@ -34,10 +34,16 @@
 }
 
 .mainWrapper {
+    width: 100%;
+
     img {
         @include phone_lg {
             width: 75%;
             margin: 0 auto;
+        }
+
+        @include desk_xl {
+            min-width: 75%;
         }
     }
 }

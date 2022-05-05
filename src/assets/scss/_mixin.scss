@@ -1,3 +1,9 @@
+@mixin desk_xl {
+  @media (min-width:1930px) {
+    @content
+  }
+}
+
 @mixin desk_lg {
   @media (min-width:1240px) {
     @content
