@@ -3,15 +3,11 @@
 
 .App {
     min-height: 100vh;
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
-    background-color: #ffcdd0;
+    background-image: url(../imgs/bg.jpg);
+    background-position: center top;
 }
 
 .container {
-    position: relative;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,34 +15,10 @@
     margin: 0 auto;
 
     @include phone_lg {
-        max-width: 50%;
+        max-width: 960px;
     }
 }
 
-.bgWrap {
-    display: none;
-
-    @include phone_lg {
-        display: block;
-        position: absolute;
-        top: 0;
-    }
-}
-
-.mainWrapper {
-    width: 100%;
-
-    img {
-        @include phone_lg {
-            width: 75%;
-            margin: 0 auto;
-        }
-
-        @include desk_xl {
-            min-width: 75%;
-        }
-    }
-}
 
 .limitWrapper {
     width: 100%;
@@ -75,7 +47,7 @@
             padding: 40px 0;
         }
 
-        span {
+        & p:nth-child(1) {
             font-size: 1.8rem;
 
 
