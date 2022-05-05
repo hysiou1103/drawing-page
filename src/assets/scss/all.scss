@@ -1,0 +1,182 @@
+@import './reset.scss';
+@import './mixin';
+
+.App {
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    background-color: #ffcdd0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    @include phone_lg {
+        max-width: 50%;
+    }
+}
+
+.bgWrap {
+    display: none;
+
+    @include phone_lg {
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+}
+
+.mainWrapper {
+    img {
+        @include phone_lg {
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+}
+
+.limitWrapper {
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    background-color: #ff7092;
+    color: white;
+    text-align: center;
+    line-height: 2;
+
+    @include ipad {
+        width: 65%;
+    }
+
+
+    .limitInner {
+        padding: 20px 0;
+        border: 2px solid #fe6e90;
+        border-radius: 20px;
+        box-shadow: inset 0 0 8px 1px #ff4062;
+        font-size: 1.4rem;
+
+
+        @include desk_lg {
+            font-size: 2.5rem;
+            padding: 40px 0;
+        }
+
+        span {
+            font-size: 1.8rem;
+
+
+            @include desk_lg {
+                font-size: 3.2rem;
+            }
+        }
+
+        strong {
+            font-size: 2.4rem;
+            font-weight: bold;
+
+
+            @include desk_lg {
+                font-size: 3.5rem;
+            }
+        }
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 40px;
+        box-shadow: 3px 3px 2px #ff4062;
+        background-color: #fcdd9d;
+        color: #cc1e05;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        @include ipad {
+            font-size: 2rem;
+        }
+
+        span {
+            margin-left: 5px;
+        }
+    }
+}
+
+.btnGroup {
+    display: none;
+    padding-top: 15px;
+
+    img {
+        width: 33%;
+        cursor: pointer;
+    }
+
+    @include phone_lg {
+        display: flex;
+    }
+}
+
+.timeSectionWrap {
+    padding: 15px;
+
+    @include phone_lg {
+        padding: 15px 0;
+    }
+}
+
+.timeSection {
+    background-image: url(../imgs/bg-box.png);
+    background-repeat: repeat;
+    background-size: contain;
+    padding: 0 20px;
+    margin: -1px 0;
+
+    @include ipad {
+        padding: 0 40px;
+    }
+
+    @include desk_lg {
+        padding: 0 60px;
+    }
+
+    table {
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #ffffff;
+        font-size: 1.6rem;
+
+        @include desk_lg {
+            font-size: 2rem;
+        }
+
+        thead {
+            font-weight: bold;
+            background-color: #cc1e05;
+            color: white;
+        }
+
+        th,
+        td {
+            padding: 11px 0;
+            text-align: center;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: #fde9e9;
+        }
+
+        tr td:nth-child(2) {
+            color: #d44211;
+            font-weight: bold;
+        }
+    }
+}
