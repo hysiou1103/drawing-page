@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/drawing-page/static/css/main.483c4c36.css",
+    "main.js": "/drawing-page/static/js/main.684fc86d.js",
+    "static/js/787.c21058c9.chunk.js": "/drawing-page/static/js/787.c21058c9.chunk.js",
+    "static/media/drawing.gif": "/drawing-page/static/media/drawing.513c5bc6acd62f10c749.gif",
+    "static/media/title.jpg": "/drawing-page/static/media/title.a532ceb5c75c0fd07cfb.jpg",
+    "static/media/bg-box.png": "/drawing-page/static/media/bg-box.bbe64979ad0d59b03f35.png",
+    "static/media/bg.jpg": "/drawing-page/static/media/bg.66c68103cc46951153c3.jpg",
+    "static/media/limitHead.png": "/drawing-page/static/media/limitHead.097c47118320e252431a.png",
+    "static/media/limitEnd.png": "/drawing-page/static/media/limitEnd.f6ca74f73760e9f0bfcf.png",
+    "static/media/recordBtn.jpg": "/drawing-page/static/media/recordBtn.caa2a223f87e46016467.jpg",
+    "static/media/shareBtn.jpg": "/drawing-page/static/media/shareBtn.20e79ecdff83d447413e.jpg",
+    "index.html": "/drawing-page/index.html",
+    "main.483c4c36.css.map": "/drawing-page/static/css/main.483c4c36.css.map",
+    "main.684fc86d.js.map": "/drawing-page/static/js/main.684fc86d.js.map",
+    "787.c21058c9.chunk.js.map": "/drawing-page/static/js/787.c21058c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.483c4c36.css",
+    "static/js/main.684fc86d.js"
+  ]
+}
