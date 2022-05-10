@@ -1,21 +1,17 @@
-@mixin desk_lg {
+@mixin desk {
   @media (min-width:1240px) {
     @content
   }
-}
-
-;
+};
 
 @mixin ipad {
   @media (min-width:768px) {
     @content
   }
-}
+};
 
-;
-
-@mixin phone_lg {
+@mixin phone {
   @media (min-width:576px) {
     @content
   }
-}
+};
