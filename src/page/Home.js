@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import title from '../assets/imgs/title.jpg'
 import drawing from '../assets/imgs/drawing.gif'
 import goBackBtn from '../assets/imgs/goBackBtn.jpg'
@@ -7,44 +7,43 @@ import shareBtn from '../assets/imgs/shareBtn.jpg'
 import limitHead from '../assets/imgs/limitHead.png'
 import limitEnd from '../assets/imgs/limitEnd.png'
 
-
-
-export const Home = ()=> {
-
+export const Home = () => {
   return (
-    <div className='container'>
-      <div className='mainWrapper'>
-        <img src={title} alt="限時搶紅包，百萬大放送"/>
-        <img src={drawing} alt="drawing button"/>
+    <div className="container">
+      <div className="mainWrapper">
+        <img src={title} alt="限時搶紅包，百萬大放送" />
+        <img src={drawing} alt="drawing button" />
       </div>
-      <div className='limitWrapper'>
-        <div className='limitInner'>
+      <div className="limitWrapper">
+        <div className="limitInner">
           <div>
-            <p>本時段已搶 <strong>1,111</strong>名</p>
+            <p>
+              本時段已搶 <strong>1,111</strong>名
+            </p>
             <p>本時段限 1,111 名</p>
-            <button>
+            <button className="reminderBtn">
               <i class="far fa-bell"></i>
-              <span>開搶提醒</span>
+              <span class="reminderText">開搶提醒</span>
             </button>
           </div>
         </div>
       </div>
-      <div className='btnGroup'>
-        <img src={goBackBtn} alt="Go back button"/>
-        <img src={recordBtn} alt="Checking record"/>
-        <img src={shareBtn} alt="Sharing button"/>
+      <div className="btnGroup">
+        <img src={goBackBtn} alt="Go back button" />
+        <img src={recordBtn} alt="Checking record" />
+        <img src={shareBtn} alt="Sharing button" />
       </div>
-      <div className='timeSectionWrap'>
-        <img src={limitHead} alt="timeSectionBegin"/>
-        <div className='timeSection'>
-          <table>
-            <thead>
+      <div className="timeSectionWrap">
+        <img src={limitHead} alt="timeSectionBegin" />
+        <div className="timeSection">
+          <table className="timeTable">
+            <thead className="timeThead">
               <tr>
                 <th>時段</th>
                 <th>名額</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="timeTbody">
               <tr>
                 <td>09:11、10:11、11:11</td>
                 <td>3,500名</td>
@@ -64,9 +63,8 @@ export const Home = ()=> {
             </tbody>
           </table>
         </div>
-        <img src={limitEnd} alt="timeSectionEnd"/>
+        <img src={limitEnd} alt="timeSectionEnd" />
       </div>
     </div>
-  );
+  )
 }
-
